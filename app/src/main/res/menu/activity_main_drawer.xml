@@ -3,23 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:icon="@drawable/support_48"
+            android:title="내 이용기록" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:icon="@drawable/support_white"
+            android:title="전체게임" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="방만들기" />
         <item
             android:id="@+id/nav_tools"
             android:icon="@drawable/ic_menu_manage"
-            android:title="@string/menu_tools" />
+            android:title="로그아웃" />
     </group>
 
     <item android:title="@string/communicate">
@@ -34,5 +35,17 @@
                 android:title="@string/menu_send" />
         </menu>
     </item>
+
+    <item android:id="@+id/menu_save"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="menu_save" />
+    <!-- menu group -->
+    <group android:id="@+id/group_delete">
+        <item android:id="@+id/menu_archive"
+            android:icon="@drawable/support_white"
+            android:title="menu_archive" />
+        <item android:id="@+id/menu_delete"
+            android:title="menu_delete" />
+    </group>
 
 </menu>
