@@ -14,8 +14,11 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.GridView;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -25,7 +28,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //수정
+        //수정----------------------------------------------
         ImageButton button = (ImageButton) findViewById(R.id.imageButton2);
         button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -33,6 +36,18 @@ public class MainActivity extends AppCompatActivity
                 startActivity(intent);
             }
         });
+
+        ImageButton button2 = (ImageButton) findViewById(R.id.imageButton3);
+        button2.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(), prac.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+        //수정-----------------------------------------------
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
